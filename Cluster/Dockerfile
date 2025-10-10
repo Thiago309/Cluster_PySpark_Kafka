@@ -65,5 +65,3 @@ RUN chmod +x entrypoint.sh
 
 # Executa o script quando inicializar um container
 ENTRYPOINT ["./entrypoint.sh"]
-
-zz
