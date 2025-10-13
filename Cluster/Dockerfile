@@ -9,6 +9,7 @@ RUN apt-get update && \
       sudo \
       curl \
       vim \
+      tree \
       nano \
       unzip \
       rsync \
