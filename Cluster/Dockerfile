@@ -53,18 +53,18 @@ ENV PYSPARK_PYTHON python3
 # Copia o arquivo de configuração do Spark para a imagem
 COPY conf/spark-defaults.conf "$SPARK_HOME/conf"
 
-# Permissões
+# Ajuste de permissões dos binarios
 RUN chmod u+x /opt/spark/sbin/* && \
     chmod u+x /opt/spark/bin/*
 
 # Variável PYTHONPATH
 ENV PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
 
-# Copia o script de inicialização dos serviços para a imagem
+# Copia o script de inicialização dos serviços para a imagem no diretorio raiz do conteiner
 COPY entrypoint.sh .
 
 # Ajusta o privilégio
 RUN chmod +x entrypoint.sh
 
-# Executa o script quando inicializar um container
+# Executa o script cada vez que inicializar um container
 ENTRYPOINT ["./entrypoint.sh"]
