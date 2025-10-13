@@ -27,16 +27,19 @@ ENV HADOOP_HOME=${HADOOP_HOME:-"/opt/hadoop"}
 RUN mkdir -p ${HADOOP_HOME} && mkdir -p ${SPARK_HOME}
 WORKDIR ${SPARK_HOME}
 
-# Download do arquivo de binários do Spark
+# Download do arquivo de binários do Spark.
 RUN curl https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz -o spark-3.5.0-bin-hadoop3.tgz \
+# Extrai o arquivo baixado na pasta indicada na maquina virtual.
  && tar xvzf spark-3.5.0-bin-hadoop3.tgz --directory /opt/spark --strip-components 1 \
+# Remove o arquivo logo a pós a instalação evitando disperdicio de armazenamento.
  && rm -rf spark-3.5.0-bin-hadoop3.tgz
 
 # Prepara o ambiente com PySpark
 FROM spark-base as pyspark
 
-# Instala as dependências Python
+# Instala as dependências Python. Copia a pasta local de requirements.txt para o diretorio raiz dentro do container o SPARK_HOME:-"/opt/spark"
 COPY requirements/requirements.txt .
+# Instala as dependencias python do arquivo requirements.txt
 RUN pip3 install -r requirements.txt
 
 # Mais variáveis de ambiente
