@@ -1,32 +1,55 @@
+# Versão da ferramenta
 version: '3.8'
 
+# Nome do cluster
 name: dsa-pyspark-cluster
 
 services:
+  # Criação do container master (Gerenciador dos conteineres)
   spark-master:
+    # Nome do container
     container_name: dsa-pyspark-master
+    # Diretorio onde se encontra a imagem de criação do conteiner master
     build: .
+    # Nome do arquivo imagem (ISO) de criação do container
     image: dsa-pyspark-image
+    # Seta para criar o conteiner com as configurações do tipo master através do arquivo entrypoint.sh
     entrypoint: ['./entrypoint.sh', 'master']
+
+    # Função para verificar se o conteiner master realmente esta funcionando de forma correta, utilizando a porta https: 8080
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:8080" ]
+      # Intervalo de testes
       interval: 5s
+      # Periodo de testes
       timeout: 3s
+      # Quantidade de testes
       retries: 3
+
+    # Realiza o mapeamento de volumes da maquina local para a minha maquina virtual container master.
     volumes:
+      # Base de dados a serem trabalhados.
       - ./dados:/opt/spark/data
+      # Scripts de pyspark com kafka.
       - ./jobs:/opt/spark/apps
+      # Verifica as ações do spark (Criação, funções e etc).
       - spark-logs:/opt/spark/spark-events
+
+    # Arquivo oculto de configuração.
     env_file:
       - .env.spark
+    # Mapeamento de portas entre as maquinas local (Portas a direita - 9091 | 7071) e remota docker (portas a esquerda - 8080 | 7077) 
     ports:
       - '9091:8080'
       - '7071:7077'
 
   spark-history-server:
+    # Criação para o cluster de registro de historicos dos clusteres Pyspark.
     container_name: dsa-pyspark-history
     image: dsa-pyspark-image
+    # Seta para criar o conteiner com as configurações do tipo history através do arquivo entrypoint.sh
     entrypoint: ['./entrypoint.sh', 'history']
+    # Enlaça uma dependencia de criação desse serviço. Esse serviço só irá ser criado se o cluster master for criado antes.
     depends_on:
       - spark-master
     env_file:
@@ -38,7 +61,9 @@ services:
 
   spark-worker:
     image: dsa-pyspark-image
+    # Seta para criar o conteiner com as configurações do tipo worker através do arquivo entrypoint.sh
     entrypoint: ['./entrypoint.sh', 'worker']
+    # Enlaça uma dependencia de criação desse serviço. Esse serviço só irá ser criado se o cluster master for criado antes.
     depends_on:
       - spark-master
     env_file:
