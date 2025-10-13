@@ -5,9 +5,9 @@
 cd "/mnt/c/Users/karer/OneDrive/Documentos/GitHub/Cluster_PySpark_Kafka/Cluster"
 
 # Criar e Inicializar o Cluster
-docker-compose -f docker-compose.yml up -d --scale spark-worker=2
+docker-compose -f docker-compose.yml up -d --scale spark-worker=2   (comando não funciona) 
 
-docker-compose up --scale spark-worker=3
+docker-compose up --scale spark-worker=2
 
 # Spark Master
 http://localhost:9091
