@@ -28,7 +28,16 @@ cd "/mnt/c/Users/karer/OneDrive/Documentos/GitHub/Cluster_PySpark_Kafka/Cluster"
 gera lentidão no servidor do Dockerhub. 
 docker-compose -f docker-compose.yml up -d --scale spark-worker=2 
 
----------------------------------------------------------------------------------------------------
+
+c. Portas Padrão
+
+# Spark Master
+http://localhost:9091
+
+# History Server
+http://localhost:18081
+
+--------------------------------------------------------------------------------------------------------------
 
 2. SCRIPTS
 
@@ -38,8 +47,6 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 # 2. Script 01 - Distinct 
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-01-distinct.py
 
-# Spark Master
-http://localhost:9091
+# 3. Script 02 - Adicionando novas colunas ao DataFrame (DF)
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-02-add-new-column.py
 
-# History Server
-http://localhost:18081
