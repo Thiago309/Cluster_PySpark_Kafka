@@ -1,14 +1,42 @@
-# PySpark e Apache Kafka Para Processamento de Dados em Batch e Streaming
-# Preparação do Ambiente de Trabalho com Python e PySpark
-# Configuração do Cluster PySpark
+###########################################################################
+# PySpark e Apache Kafka Para Processamento de Dados em Batch e Streaming #
+###########################################################################
 
+
+1. Preparar Ambiente de Trabalho com Python e PySpark.
+
+a. Configuração do Cluster PySpark
+
+1-  Criar diretorio Cluster/
+2-  Criar arquivo entrypoint.sh no diretorio Cluster/
+3-  Criar o arquivo docker-compose.yml
+4-  Criar pasta conf/ e inserir e configurar o arquivo spark-defaults.conf
+5-  Configurar Dockerfile
+6-  Criar arquivo .env.spark no diretorio Cluster/
+7-  Criar diretorio requirements/
+8-  Criar o arquivo do tipo txt para informar as dependencias que serão utilizadas como base no spark
+9-  Criar diretorio jobs/ e inserir os scripts que serão executados no conteiner spark no docker
+10- Criar diretorio dados/ e inserir o arquivo jdbc do sqlite e o volume de dados que deseja trabalhar
+11- Inserir o arquivo log4j2 no diretorio conf/ caso para definir niveis de log no terminal.
+
+b. Criar e Inicializar o Cluster
+
+1- Ir até o diretorio do projeto do Cluster PySpark.
 cd "/mnt/c/Users/karer/OneDrive/Documentos/GitHub/Cluster_PySpark_Kafka/Cluster"
 
-# Criar e Inicializar o Cluster
+2- Executar o comando no terminal abaixo, tentar até funcionar. O acesso simutâneo de varios desenvolvedores
+gera lentidão no servidor do Dockerhub. 
 docker-compose -f docker-compose.yml up -d --scale spark-worker=2 
 
-# 1. Executar o Script 00 Teste de Log no Cluster PySpark. 
+---------------------------------------------------------------------------------------------------
+
+2. SCRIPTS
+
+# 1. Script 00 - Teste de Log no Cluster PySpark 
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-00-teste-log.py
+
+# 2. Script 01 - Distinct 
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-01-distinct.py
 
 # Spark Master
 http://localhost:9091
