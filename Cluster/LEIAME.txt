@@ -7,6 +7,9 @@ cd "/mnt/c/Users/karer/OneDrive/Documentos/GitHub/Cluster_PySpark_Kafka/Cluster"
 # Criar e Inicializar o Cluster
 docker-compose -f docker-compose.yml up -d --scale spark-worker=2 
 
+# 1. Executar o Script 00 Teste de Log no Cluster PySpark. 
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-00-teste-log.py
+
 # Spark Master
 http://localhost:9091
 
