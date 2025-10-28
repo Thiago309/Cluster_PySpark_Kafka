@@ -61,3 +61,7 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 
 # 7. Script 06 - Array de String
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-06-array-string.py
+
+# 8. Script 07 - Criando Data Frame apartir de um Dicionario
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-07-create-dataframe-dictionary.py
+
