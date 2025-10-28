@@ -52,3 +52,6 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 
 # 4. Script 03 - Realizando operações com Datas
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-03-add-month.py
+
+# 5. Script 04 - Uso do expr (Expressões com Apack Spark) 
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-04-expr.py
