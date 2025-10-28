@@ -55,3 +55,5 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 
 # 5. Script 04 - Uso do expr (Expressões com Apack Spark) 
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-04-expr.py
+
+# 6. Script 05 - Arraytype
