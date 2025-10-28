@@ -58,3 +58,6 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 
 # 6. Script 05 - Array Type e Struct Type
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-05-arraytype.py
+
+# 7. Script 06 - Array de String
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-06-array-string.py

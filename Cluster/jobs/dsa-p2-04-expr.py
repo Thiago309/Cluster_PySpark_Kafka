@@ -64,6 +64,3 @@ df.select(df.data, df.incremento,
 df.select(df.data, df.incremento + 5,
      expr("""add_months(data,incremento + 5) as inc_data3""")
   ).show()
-
-
-

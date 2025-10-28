@@ -27,6 +27,9 @@ dados_dsa = [("Patricia,Freitas",["Python","Rust","C++"],["Scala","Ruby"],"RJ","
 arrayCol = ArrayType(StringType(),False)
 
 # Define o esquema (estrutura) do DataFrame
+# É indicado utilizar o schema com o StructType para definir o tipo do dado que desejo utilizar.
+# Caso não, o Spark decide utilizar o tipo do dado, mas as vezes ele não acerta o tipo ideal.
+# Sendo assim, é bom deixar explicito o tipo do dado que desejo utilizar.
 schema = StructType([ 
     StructField("nome", StringType(),True), 
     StructField("linguagemMaisUsada", ArrayType(StringType()),True), 
@@ -56,7 +59,3 @@ df.select(df.nome, array(df.estadoAnterior,df.estadoAtual).alias("estadoAsArray"
 
 # Seleciona e mostra se a coluna linguagemMaisUsada contém "Python"
 df.select(df.nome, array_contains(df.linguagemMaisUsada,"Python").alias("usa_python")).show()
-
-
-
-

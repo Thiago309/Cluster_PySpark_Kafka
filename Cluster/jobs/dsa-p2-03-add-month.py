@@ -35,10 +35,11 @@ spark.createDataFrame(dados_dsa).toDF("data","incremento") \
 # Cria um DataFrame a partir dos dados
 df = spark.createDataFrame(dados_dsa).toDF("data","incremento")
 
+# --------------------------------------------- Com SQL ---------------------------------------------------
+
 # Cria uma view temporária para a consulta SQL
 df.createOrReplaceTempView("DSATEMP")
 
-# Executa a consulta SQL
 # Esta opção de consulta é aconselhável ser utilizada em casos com pequenos volume de dados.
 spark.sql("""
     SELECT

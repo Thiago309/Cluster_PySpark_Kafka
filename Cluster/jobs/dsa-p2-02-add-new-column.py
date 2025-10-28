@@ -69,6 +69,8 @@ df.select("nome", "salario", current_date().alias("today_date")).show()
 # Mostra o DataFrame
 df.show()
 
+# --------------------------------------------- Com SQL ---------------------------------------------------
+
 # Cria ou substitui uma visualização temporária com o nome 'DSATEMP'.
 # Pega meu dataframe (df) que esta na sessão pyspark, converte para SQL e
 # poe em uma tabela temporaria na memoria chamada 'DSATEMP', assim possibilitando as analises em SQL.
