@@ -50,3 +50,5 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 # 3. Script 02 - Adicionando novas colunas ao DataFrame (DF)
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-02-add-new-column.py
 
+# 4. Script 03 - Realizando operações com Datas
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-03-add-month.py
