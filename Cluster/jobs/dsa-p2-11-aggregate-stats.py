@@ -105,7 +105,6 @@ df.select(sum_distinct("salario")).show(truncate=False)
 df.select(variance("salario"),var_samp("salario"),var_pop("salario")).show(truncate=False)
 
 
-
 """
 
 Aggregate e Stats
