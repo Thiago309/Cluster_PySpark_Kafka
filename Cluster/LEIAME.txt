@@ -65,3 +65,5 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 # 8. Script 07 - Criando Data Frame apartir de um Dicionario
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-07-create-dataframe-dictionary.py
 
+# 9. Script 08 - Top N
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-08-show-top-n-rows.py
