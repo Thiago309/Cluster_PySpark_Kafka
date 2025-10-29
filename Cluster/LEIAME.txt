@@ -67,3 +67,8 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 
 # 9. Script 08 - Top N
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-08-show-top-n-rows.py
+
+# 10. Script 09 - Amostragem
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-09-sampling.py
+
+# 11. Script 10 - 
