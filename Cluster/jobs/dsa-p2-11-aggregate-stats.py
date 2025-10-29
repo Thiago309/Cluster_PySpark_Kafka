@@ -290,6 +290,7 @@ Exemplo Clássico: Notas de uma prova muito fácil. A maioria dos alunos tirou n
 os dados à direita, mas alguns poucos alunos que não estudaram tiraram notas muito baixas (1, 2), criando uma cauda 
 à esquerda.
 
+---------------------------------------------------------------------------------------------------------------------------
 
 RESUMO:
 
