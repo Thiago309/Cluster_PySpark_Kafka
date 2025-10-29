@@ -71,4 +71,5 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 # 10. Script 09 - Amostragem
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-09-sampling.py
 
-# 11. Script 10 - 
+# 11. Script 10 - Objeto Row
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-10-row.py
