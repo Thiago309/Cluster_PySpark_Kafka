@@ -73,3 +73,6 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-0
 
 # 11. Script 10 - Objeto Row
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-10-row.py
+
+# 12. Script 11 - Agregação e Estatisticas
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-11-aggregate-stats.py
