@@ -107,4 +107,5 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-1
 # 21. Script 20 - Explode de Array Aninhados
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-20-explode-nested-array.py
 
-# 22. Script 21 - 
+# 22. Script 21 - Script 21 - Loop
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-21-loop.py
