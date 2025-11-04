@@ -95,10 +95,16 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-1
 # 17. Script 16 - Filtros de Nulos
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-16-filter-null.py
 
-# 18. Script 17 - Drop de Colunas.
+# 18. Script 17 - Drop de Colunas
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-17-drop-column.py
 
 # 19. Script 18 - Drop de Nulos
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-18-drop-null.py
 
-# 20. 
+# 20. Script 19 - Explode de Array ou Map
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-19-explode-array-map.py
+
+# 21. Script 20 - Explode de Array Aninhados
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-20-explode-nested-array.py
+
+# 22. Script 21 - 

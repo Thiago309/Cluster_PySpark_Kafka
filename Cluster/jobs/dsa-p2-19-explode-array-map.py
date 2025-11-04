@@ -68,4 +68,3 @@ df.select(df.nome, posexplode_outer(df.linguagens)).show()
 
 # Expande a coluna 'atributos', incluindo a chave como índice, com tratamento para dicionários nulos ou vazios
 df.select(df.nome, posexplode_outer(df.atributos)).show()
-
