@@ -76,3 +76,6 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-1
 
 # 12. Script 11 - Agregação e Estatisticas
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-11-aggregate-stats.py
+
+# 13. Script 12 -  Converte Map Para Coluna
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-12-convert-map-to-columns.py
