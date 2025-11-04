@@ -1,4 +1,4 @@
-# DSA Projeto 2 - Script 12 - Converte Map Para Coluna
+# DSA Projeto 2 - Script 12 - Converte Map (Dicionario) Para Coluna
 
 # Imports
 import os

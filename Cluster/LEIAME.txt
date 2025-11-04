@@ -37,7 +37,7 @@ http://localhost:9091
 # History Server
 http://localhost:18081
 
---------------------------------------------------------------------------------------------------------------
+---------------------------- PySpark Para Proceessamento Distribuído de Dados - Parte 1 --------------------------------------
 
 2. SCRIPTS
 
@@ -77,5 +77,11 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-1
 # 12. Script 11 - Agregação e Estatisticas
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-11-aggregate-stats.py
 
-# 13. Script 12 -  Converte Map Para Coluna
+# 13. Script 12 - Converte Map(Dicionario) Para Coluna
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-12-convert-map-to-columns.py
+
+# 14. Script 13 - Converte Coluna Para Map(Dicionario)
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-13-convert_columns-to-map.py
+
+
+---------------------------- PySpark Para Proceessamento Distribuído de Dados - Parte 2 --------------------------------------
