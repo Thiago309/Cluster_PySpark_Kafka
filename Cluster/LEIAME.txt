@@ -85,3 +85,9 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-1
 
 
 ---------------------------- PySpark Para Proceessamento Distribuído de Dados - Parte 2 --------------------------------------
+
+# 15. Script 14 - Filtros & Struct Aninhada
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-14-filter.py
+
+# 16. Script 15 - Filtros 2
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-15-filter2.py
