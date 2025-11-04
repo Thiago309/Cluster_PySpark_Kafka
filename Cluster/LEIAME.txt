@@ -91,3 +91,14 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-1
 
 # 16. Script 15 - Filtros 2
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-15-filter2.py
+
+# 17. Script 16 - Filtros de Nulos
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-16-filter-null.py
+
+# 18. Script 17 - Drop de Colunas
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-17-drop-column.py
+
+# 19. Script 18 - Drop de Nulos
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-18-drop-null.py
+
+# 20. 
