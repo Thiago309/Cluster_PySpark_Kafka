@@ -113,3 +113,6 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-2
 # 23. Script 22 - Pivot e Unpivot
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-22-pivot.py
 
+# 24. Script 23 - Split Functions
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-23-split-function.py
+
