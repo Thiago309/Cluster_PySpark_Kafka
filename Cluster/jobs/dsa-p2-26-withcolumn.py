@@ -107,5 +107,3 @@ df7.printSchema()
 
 # Exibe o DataFrame com a estrutura de dados complexa
 df7.show(truncate=False)
-
-
