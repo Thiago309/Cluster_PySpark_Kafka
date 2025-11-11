@@ -70,4 +70,3 @@ df.select(df.nome, map_keys(df.atributos)).show(truncate=False)
 # Seleciona o nome e extrai os valores do mapa de atributos
 from pyspark.sql.functions import map_values
 df.select(df.nome, map_values(df.atributos)).show(truncate=False)
-

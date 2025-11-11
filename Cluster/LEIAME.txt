@@ -119,5 +119,21 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-2
 # 25. Script 24 - Collect
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-24-collect.py
 
-#26 . Script 25 - Operadores
+# 26. Script 25 - Operadores
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-25-operadores.py
+
+# 27. Script 26 - Withcolumn
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-26-withcolumn.py
+
+# 28. Script 27 - Operações de Coluna
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-27-column-operations.py
+
+# 29. Script 28 - Maptype
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-28-maptype-dataframe-column.py
+
+
+---------------------------- PySpark Para Proceessamento Distribuído de Dados - Parte 3 --------------------------------------
+
+
+# 30. Script 29 - Operações com RDD
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-29-rdd.py
