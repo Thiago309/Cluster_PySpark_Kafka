@@ -65,4 +65,3 @@ df.filter(df.sobrenome.isNotNull()).show()
 # substr
 print('\nOperador substr():')
 df.select(df.primeironome.substr(1,2).alias("substr")).show()
-
