@@ -46,5 +46,3 @@ print(dataCollect2)
 # Itera sobre cada Row na lista coletada e imprime o nome do departamento e o ID, formatados como uma string
 for row in dataCollect:
     print(row['dept_name'] + "," + str(row['dept_id']))
-
-

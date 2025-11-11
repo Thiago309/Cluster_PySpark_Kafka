@@ -116,3 +116,8 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-2
 # 24. Script 23 - Split Functions
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-23-split-function.py
 
+# 25. Script 24 - Collect
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-24-collect.py
+
+#26 . Script 25 - Operadores
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-25-operadores.py
