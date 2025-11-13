@@ -152,3 +152,7 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-3
 
 # 35. Script 34 - RDD e Dataframe
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-34-rdd-to-dataframe.py
+
+# 36. Script 35 - ReduceByKey
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-35-rdd-reduceByKey.py
+
