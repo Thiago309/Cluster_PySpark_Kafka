@@ -146,3 +146,6 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-3
 
 # 33. Script 32 - RDD Map
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-32-rdd-map.py
+
+# 34. Script 33 - RDD FlatMap
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-33-rdd-flatMap.py

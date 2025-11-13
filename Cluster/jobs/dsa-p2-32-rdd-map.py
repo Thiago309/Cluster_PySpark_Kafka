@@ -57,6 +57,3 @@ df5 = df.rdd.map(lambda x: dsa_func(x)).toDF().show()
 
 # Outra forma de aplicar a função ao RDD e converter para DataFrame, exibindo o resultado
 df6 = df.rdd.map(dsa_func).toDF().show()
-
-
-
