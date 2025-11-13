@@ -66,3 +66,8 @@ print('\n----------')
 # Coleta e imprime as tuplas filtradas
 for element in rdd6.collect():
     print(element)
+
+
+# Mapeamento e redução é um processo que serve para resumir os dados.
+# São utilizado em: processamentos de dados, preparação de volume de dados para teinamento
+# de machine learning, formatação de dados, armazenamento em banco de dados e etc.

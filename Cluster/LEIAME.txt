@@ -156,3 +156,10 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-3
 # 36. Script 35 - ReduceByKey
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-35-rdd-reduceByKey.py
 
+# 37. Script 36 - RDD MapReduce
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-36-rdd-map-reduce.py
+
+# 38. Script 37 - RDD MapReduce2
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-37-rdd-map-reduce2.py
+
+# 39. Scrirpt 38 - 
