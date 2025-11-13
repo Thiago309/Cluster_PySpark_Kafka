@@ -137,3 +137,9 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-2
 
 # 30. Script 29 - Operações com RDD
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-29-rdd.py
+
+# 31. Script 30 - RDD Actions
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-30-rdd-actions.py
+
+# 32. Script 31 - Variáveis Broadcast e RDD
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-31-rdd-broadcast.py

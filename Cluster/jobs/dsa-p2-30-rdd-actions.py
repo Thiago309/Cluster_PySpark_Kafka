@@ -69,13 +69,10 @@ print("Maior Valor:  " + str(inputRDD.max()))
 print("Dois Primeiros Elementos: " + str(listRdd.take(2)))
 
 # Retorna os dois primeiros elementos do listRdd quando ordenado
-print("Dois Primeiros Elementos (Ordenaddo): " + str(listRdd.takeOrdered(2)))
+print("Dois Primeiros Elementos (Ordenado): " + str(listRdd.takeOrdered(2)))
 
 
 # Actions são operações que instruem o Spark a executar cálculos e retornar o resultado final desses cálculos. 
 # Elas são utilizadas para obter resultados concretos a partir de RDDs transformados ou não. 
 # Ao contrário das transformações, que são operações "lazy" (preguiçosas) e apenas montam um plano de execução, 
 # as actions forçam a execução desses planos e trazem os dados para o programa driver ou gravam em disco.
-
-
-
