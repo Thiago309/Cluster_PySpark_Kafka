@@ -143,3 +143,6 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-3
 
 # 32. Script 31 - Variáveis Broadcast e RDD
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-31-rdd-broadcast.py
+
+# 33. Script 32 - RDD Map
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-32-rdd-map.py
