@@ -162,4 +162,5 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-3
 # 38. Script 37 - RDD MapReduce2
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-37-rdd-map-reduce2.py
 
-# 39. Scrirpt 38 - 
+# 39. Script 38 - Partition (Particionamento)
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-38-partitionby.py
