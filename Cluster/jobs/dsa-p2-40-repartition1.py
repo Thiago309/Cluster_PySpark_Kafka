@@ -59,6 +59,3 @@ rdd3.saveAsTextFile("/opt/spark/data/coalesce2")
 # nós em um cluster. Esta técnica é importante para otimizar a performance de operações que envolvem shuffling de dados, 
 # como agrupamentos (groupBy), junções (joins) e ordenações (sortBy). Reparticionar um RDD ou um DataFrame pode ajudar 
 # a melhorar a eficiência do processamento paralelo e a gestão da carga de trabalho entre os nós.
-
-
-
