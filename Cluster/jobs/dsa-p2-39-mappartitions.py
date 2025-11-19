@@ -60,7 +60,4 @@ df2.show()
 
 # No Apache Spark, mapPartitions é uma função de transformação que processa os dados em 
 # RDDs (Resilient Distributed Datasets). É uma alternativa ao uso da função map, mas opera em uma escala diferente. 
-# Enquanto map aplica uma função a cada elemento individualmente no RDD, mapPartitions aplica uma função a 
-# cada partição do RDD como um todo. 
-
-
+# Enquanto map aplica uma função a cada elemento individualmente no RDD, mapPartitions aplica uma função acada partição do RDD como um todo. 
