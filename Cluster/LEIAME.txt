@@ -185,3 +185,8 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-4
 
 # 46. Script 45 - UDF (User Defined Function)
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-45-udf.py
+
+# 47. Script 46 - Parallelize
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-46-parallelize.py
+
+# 48. 
