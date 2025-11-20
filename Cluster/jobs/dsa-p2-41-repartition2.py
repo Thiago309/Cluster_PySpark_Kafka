@@ -32,7 +32,3 @@ df3 = df.repartition("estado")
 print("Número de Partições do df3: " + str(df3.rdd.getNumPartitions()))
 
 df3.write.option("header",True).mode("overwrite").csv("/opt/spark/data/zipcodes-estado-todosestados")
-
-
-
-
