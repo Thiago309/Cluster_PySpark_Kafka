@@ -179,3 +179,8 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-4
 
 # 44. Script 43 - Range Partition 2
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-43-range-partition2.py
+
+# 45. Script 44 - Dataframe Partition
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-44-dataframe-repartition.py
+
+# 46. 
