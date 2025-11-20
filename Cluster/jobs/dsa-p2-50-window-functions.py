@@ -85,5 +85,3 @@ df.withColumn("row", row_number().over(windowSpec)) \
   .withColumn("max", max(col("salario")).over(windowSpecAgg)) \
   .where(col("row") == 1).select("departamento", "avg", "sum", "min", "max") \
   .show()
-
-
