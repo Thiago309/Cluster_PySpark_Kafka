@@ -189,4 +189,5 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-4
 # 47. Script 46 - Parallelize
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-46-parallelize.py
 
-# 48. 
+# 48. Script 47 - Time Diff
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-47-time-diff.py
