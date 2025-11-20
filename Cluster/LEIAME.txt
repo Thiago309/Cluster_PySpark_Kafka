@@ -194,3 +194,8 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-4
 
 # 49. Script 48 - Timestamp
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-48-timestamp.py
+
+# 50. Script 49 - Current Date Timestamp
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-49-current-date-timestamp.py
+
+# 51. 
