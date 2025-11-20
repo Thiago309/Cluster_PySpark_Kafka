@@ -191,3 +191,6 @@ docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-4
 
 # 48. Script 47 - Time Diff
 docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-47-time-diff.py
+
+# 49. Script 48 - Timestamp
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-48-timestamp.py
