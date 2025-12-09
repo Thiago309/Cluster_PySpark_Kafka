@@ -5,3 +5,9 @@
 
 # Cluster_PySpark_Kafka
 Implementação prática de um Cluster PySpark integrado ao Kafka para processamento de Big Data. O projeto reúne 50 scripts de automação e transformação de dados, além da documentação completa do ambiente configurado com Docker e WSL2.
+
+## 📝 Autor 
+
+![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
+
+Desenvolvido por [Thiago Vinicius](https://www.linkedin.com/in/thiagoviniciusbsantos/).
