@@ -18,7 +18,7 @@ Cluster/
 ├── .gitattributes
 ├── .gitignore
 ├── Dockerfile         # Definição da imagem Docker do cluster
-├── LEIAME.txt         # Instruções rápidas (se houver)
+├── LEIAME.txt         # Instruções
 ├── LICENSE
 ├── README.md          # Documentação do projeto
 ├── docker-compose.yml # Orquestração dos serviços (Master, Workers, etc.)
