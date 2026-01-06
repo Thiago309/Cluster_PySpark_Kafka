@@ -18,10 +18,10 @@ Cluster/
 ├── dados/                        # Diretório mapeado (Input/Output de dados)
 │   ├── coalesce2/
 │   ├── dsa_partition1/
-│   ├── partition*/               # Diretórios demonstrando estratégias de particionamento
+│   ├── partition/               # Diretórios demonstrando estratégias de particionamento
 │   ├── range-partition/
 │   ├── re-partition/
-│   ├── zipcodes-estado*/         # Dados geográficos particionados
+│   ├── zipcodes-estado/         # Dados geográficos particionados
 │   ├── dataset1.txt
 │   ├── dataset2.csv
 │   ├── sqlite-jdbc-3.50.3.0.jar  # Driver JDBC para conexão com banco SQLite
