@@ -9,21 +9,40 @@ Implementação prática de um Cluster PySpark integrado ao Kafka para processam
 
 ---
 ## 📂 Estrutura do Projeto
+
 ```bash
 Cluster/
-├── conf/              # Arquivos de configuração do Spark (ex: spark-defaults.conf)
-├── dados/             # Diretório mapeado para entrada/saída de dados
-├── jobs/              # Scripts de processamento (ETL/Spark Jobs)
-├── requirements/      # Dependências de bibliotecas Python
-├── .env.spark         # Variáveis de ambiente para configuração do Spark
+├── conf/
+│   ├── log4j2.properties         # Configuração de logs do Spark
+│   └── spark-defaults.conf       # Configurações padrão do ambiente Spark
+├── dados/                        # Diretório mapeado (Input/Output de dados)
+│   ├── coalesce2/
+│   ├── dsa_partition1/
+│   ├── partition*/               # Diretórios demonstrando estratégias de particionamento
+│   ├── range-partition/
+│   ├── re-partition/
+│   ├── zipcodes-estado*/         # Dados geográficos particionados
+│   ├── dataset1.txt
+│   ├── dataset2.csv
+│   ├── sqlite-jdbc-3.50.3.0.jar  # Driver JDBC para conexão com banco SQLite
+│   ├── usuarios.db               # Banco de dados SQLite
+│   └── usuarios.json
+├── jobs/                         # Scripts de Processamento (PySpark)
+│   ├── dsa-p2-00-teste-log.py    # Script inicial de teste
+│   ├── ...                       # (Scripts 01 ao 49 cobrindo RDDs, DataFrames, SQL, etc.)
+│   ├── dsa-p2-50-window-functions.py
+│   └── projeto1.py               # Projeto prático consolidado
+├── requirements/
+│   └── requirements.txt          # Lista de dependências Python (pip)
+├── .env.spark                    # Variáveis de ambiente para o Spark
 ├── .gitattributes
 ├── .gitignore
-├── Dockerfile         # Definição da imagem Docker do cluster
-├── LEIAME.txt         # Instruções
+├── Dockerfile                    # Definição da imagem Docker do Cluster
+├── LEIAME.txt                    # Instruções rápidas
 ├── LICENSE
-├── README.md          # Documentação do projeto
-├── docker-compose.yml # Orquestração dos serviços (Master, Workers, etc.)
-└── entrypoint.sh      # Script de inicialização do container
+├── README.md                     # Documentação oficial
+├── docker-compose.yml            # Orquestração dos containers (Master/Workers)
+└── entrypoint.sh                 # Script de inicialização do container
 ```
 ---
 ## 📝 Autor 
